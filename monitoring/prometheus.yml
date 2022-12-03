@@ -9,4 +9,4 @@ scrape_configs:
     scrape_interval: 5s
     metrics_path: /monitoring/prometheus/metrics
     static_configs:
-      - targets: ['bcc-prediction.herokuapp.com']
+      - targets: ['bbc-prediction-shzbom57sq-et.a.run.app']
