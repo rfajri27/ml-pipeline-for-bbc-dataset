@@ -2,7 +2,7 @@
 # Build an ML Pipeline for BBC Dataset using TensorFlow Extended
 
 <div align="center">
-  <img src="https://github.com/rfajri27/ml-pipeline-for-bbc-dataset/blob/main/images/pipeline.png" width="100%" />
+  <img src="https://www.tensorflow.org/static/tfx/guide/images/prog_fin.png" width="100%" />
 
   <h4>
   Machine learning pipeline built with TensorFlow Extended (TFX) and Apache Beam as a pipeline orchestrator in order to handle BBC dataset.
@@ -34,9 +34,25 @@ project
 ```
 
 ## Dataset
+I used a public dataset from the BBC comprised of 2225 articles, each labeled under one of 5 categories: business, entertainment, politics, sport, and tech. The data can be found [here](http://mlg.ucd.ie/datasets/bbc.html).
 
 ## Machine Learning Pipeline
+Used TFX to build a machine learning pipeline & Apache Beam as a pipeline orchestrator. This pipeline consists of 9 components with specific tasks. The following table describes the components of this pipeline in order:
+
+| Pipeline component | Description |
+| ----------- | ----------- |
+| CsvExampleGen | |
+| StatisticsGen | |
+| SchemaGen | |
+| ExampleValidator | |
+| Transform | |
+| Tuner | |
+| Trainer | |
+| Evaluator | |
+| Pusher | |
 
 ## Deployment
+Build model serving using [TensorFlow Serving](https://www.tensorflow.org/tfx/guide/serving) that runs on the [Cloud Run](https://cloud.google.com/run). The model serving can be found [here](https://bbc-prediction-shzbom57sq-et.a.run.app/v1/models/bbc-model). 
 
 ## Monitoring
+Used Prometheus to monitor the model serving.
