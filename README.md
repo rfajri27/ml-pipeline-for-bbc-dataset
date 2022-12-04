@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg) [![TFX](https://img.shields.io/badge/TFX-1.7-orange)](https://www.tensorflow.org/tfx)
-# Build an ML Pipeline for BBC Dataset using TensorFlow Extended
+# Build a ML Pipeline for BBC Dataset using TensorFlow Extended
 
 <div align="center">
   <img src="https://www.tensorflow.org/static/tfx/guide/images/prog_fin.png" width="100%" />
