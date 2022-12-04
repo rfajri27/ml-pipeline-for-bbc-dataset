@@ -6,7 +6,7 @@ from absl import logging
 from tfx.orchestration import metadata, pipeline
 from tfx.orchestration.beam.beam_dag_runner import BeamDagRunner
 
-PIPELINE_NAME = "fajri27-pipeline"
+PIPELINE_NAME = "bbc-pipeline"
 
 # pipeline inputs
 DATA_ROOT = "data"
@@ -16,7 +16,7 @@ TUNER_MODULE_FILE = "modules/bbc_tuner.py"
 # requirement_file = os.path.join(root, "requirements.txt")
 
 # pipeline outputs
-OUTPUT_BASE = "fajri27-pipeline"
+OUTPUT_BASE = "pipeline"
 pipeline_root = os.path.join(OUTPUT_BASE, PIPELINE_NAME)
 metadata_path = os.path.join(pipeline_root, "metadata.sqlite")
 
